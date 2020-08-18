@@ -1,0 +1,58 @@
+{
+    "room_in": {
+        "after_sunrise": {
+            "cloudy": [],
+            "not_cloudy": []
+        },
+        "after_sunset": {
+            "cloudy": [],
+            "not_cloudy": []
+        }
+    },
+    "room_out": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 0.0,
+                    "activity": "room_out",
+                    "all_off": true,
+                    "bathroom1/power_toggle": "Off",
+                    "cloud_cover": "cloudy",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 0.0,
+                    "activity": "room_out",
+                    "all_off": true,
+                    "bathroom1/power_toggle": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 0.0,
+                    "activity": 0.0,
+                    "all_off": true,
+                    "bathroom1/power_toggle": "Off",
+                    "cloud_cover": "cloudy",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 0.0,
+                    "activity": "room_out",
+                    "all_off": true,
+                    "bathroom1/power_toggle": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "2020-07-17 23:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.0,
+        "current_energy_savings": 0.0,
+        "energy_savings": 0.0
+    },
+    "2020-07-18 05:15:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.08592203863466374,
+        "current_energy_savings": 0.6244334203100563,
+        "energy_savings": 0.0
+    },
+    "2020-07-19 11:55:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.15650348270943346,
+        "current_energy_savings": 1.1373799615511153,
+        "energy_savings": 0.0
+    },
+    "2020-07-23 18:05:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": -0.18624956847375618,
+        "current_energy_savings": -1.3535579104197395,
+        "energy_savings": 0.0
+    }
+}

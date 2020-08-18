@@ -1,0 +1,68 @@
+{
+    "2020-07-17 23:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.0,
+        "current_energy_savings": 0.0,
+        "energy_savings": 0.0
+    },
+    "2020-07-18 05:15:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.4470597541949566,
+        "current_energy_savings": 3.2489807717657015,
+        "energy_savings": 0.0
+    },
+    "2020-07-19 07:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.9493029121677736,
+        "current_energy_savings": 6.89900372214953,
+        "energy_savings": 0.0
+    },
+    "2020-07-19 11:55:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.6129665323819999,
+        "current_energy_savings": 4.454698636497099,
+        "energy_savings": 0.0
+    },
+    "2020-07-20 02:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 4.280196039605308,
+        "current_energy_savings": 31.10607586922464,
+        "energy_savings": 0.0
+    },
+    "2020-07-20 05:45:00-04:00": {
+        "cost_savings": 1.1676611516238733,
+        "current_cost_savings": 6.438933462568498,
+        "current_energy_savings": 46.7945745826199,
+        "energy_savings": 8.485909532150245
+    },
+    "2020-07-20 09:00:00-04:00": {
+        "cost_savings": 2.4349874247397043,
+        "current_cost_savings": 7.955266775040986,
+        "current_energy_savings": 57.814438772100196,
+        "energy_savings": 17.69612954025949
+    },
+    "2020-07-20 09:55:00-04:00": {
+        "cost_savings": 2.1306139966472397,
+        "current_cost_savings": 7.2415333226494045,
+        "current_energy_savings": 52.627422402975334,
+        "energy_savings": 15.484113347727046
+    },
+    "2020-07-20 10:00:00-04:00": {
+        "cost_savings": 3.3058229942376425,
+        "current_cost_savings": 7.26805533688459,
+        "current_energy_savings": 52.82016959945198,
+        "energy_savings": 24.024876411610776
+    },
+    "2020-07-20 20:15:00-04:00": {
+        "cost_savings": 2.6446583953901133,
+        "current_cost_savings": 6.360332820495534,
+        "current_energy_savings": 46.223348986159394,
+        "energy_savings": 19.219901129288615
+    },
+    "2020-07-20 21:00:00-04:00": {
+        "cost_savings": 4.91170958838531,
+        "current_cost_savings": 6.305383769382572,
+        "current_energy_savings": 45.82400995190822,
+        "energy_savings": 35.69556386907928
+    }
+}

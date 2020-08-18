@@ -1,0 +1,66 @@
+{% extends "devices/base.html" %}
+{% block content %}
+    <h1 class="mb-3">Devices by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
+    {% for device in devices %}
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ device.room.author.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="{% url 'user-devices' device.room.author.username %}">{{ device.room.author }}</a>
+              <small class="text-muted">{{ device.date_added|date:"F d, Y" }}</small>
+            </div>
+            <table class="table table-striped table-hover">
+              <thead class="thead-dark">
+              <tr>
+                <th colspan="2"><a href="{% url 'device-detail' device.id %}" style="color:#FFFFFF;">{{ device.device_name }}</a></th>
+              </tr>
+              </thead>
+              <tr>
+                <th scope="row">Room</td>
+                <td>{{ device.room }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Sensor Name</th>
+                <td>{{ device.sensor }}</th>
+              </tr>
+              <tr>
+                <th scope="row">Sensor ID</td>
+                <td>{{ device.sensor_ID }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Entertainment</td>
+                <td>{{ device.is_entertainment }}</td>
+              </tr>
+            </table>
+            <div class="custom-control custom-switch">
+              {% if device.is_on == 'On' %}
+                <a href="{% url 'test_update' pk=device.pk %}" class="btn btn-success btn-lg">Turn Off</a>
+              {% else %}
+                <a href="{% url 'test_update' pk=device.pk %}" class="btn btn-danger btn-lg">Turn On</a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+    {% endfor %}
+    {% if is_paginated %}
+
+      {% if page_obj.has_previous %}
+        <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+          <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+      {% endif %}
+
+    {% endif %}
+{% endblock content %}

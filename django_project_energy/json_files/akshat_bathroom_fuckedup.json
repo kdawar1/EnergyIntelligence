@@ -1,0 +1,10 @@
+{
+    "2020-07-23 18:05:00-04:00": {
+        "Power_sum": 5.0,
+        "activity": "room_out",
+        "all_off": false,
+        "bathroom1/power_toggle": "On",
+        "cloud_cover": "cloudy",
+        "time": "after_sunrise"
+    }
+}

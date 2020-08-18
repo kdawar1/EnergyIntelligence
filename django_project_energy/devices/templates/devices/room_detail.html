@@ -1,0 +1,60 @@
+{% extends "devices/base.html" %}
+{% block content %}
+  <article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
+        <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small>
+        {% if object.author == user %}
+          <div>
+            <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'room-update' object.id %}">Update</a>
+            <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'room-delete' object.id %}">Delete</a>
+          </div>
+        {% endif %}
+      </div>
+      <h2 class="article-title">{{ object.room_name }}</h2>
+      <small class="text-muted">{{ object.room_type }}</small>
+      <p></p>
+
+      
+      {% for device in object.device_set.all %}
+      <div class="media-body">
+          <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+            <tr>
+              <th colspan="2"><a href="{% url 'device-detail' device.id %}" style="color:#FFFFFF;">{{ device.device_name }}</a></th>
+            </tr>
+            </thead>
+            <tr>
+              <th scope="row">Sensor Name</th>
+              <td>{{ device.sensor }}</th>
+            </tr>
+            <tr>
+              <th scope="row">Sensor ID</td>
+              <td>{{ device.sensor_ID }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Entertainment</td>
+              <td>{{ device.is_entertainment }}</td>
+            </tr>
+          </table>
+        <div class="custom-control custom-switch">
+          {% comment %} <a href="{% url 'test_update' pk=device.pk %}" class="uk-button uk-button-default">Update</a> {% endcomment %}
+          {% if device.is_on == 'On' %}
+            <a href="{% url 'test_update' pk=device.pk %}" class="btn btn-success btn-lg">Turn Off</a>
+            {% comment %} <input type="checkbox" checked class="custom-control-input" id="customSwitch{{ device.pk }}" href="{% url 'test_update' pk=device.pk %}">
+            <label class="custom-control-label" for="customSwitch{{ device.pk }}">Turn Device Off</label> {% endcomment %}
+          {% else %}
+            <a href="{% url 'test_update' pk=device.pk %}" class="btn btn-danger btn-lg">Turn On</a>
+            {% comment %} <input type="checkbox" class="custom-control-input" id="customSwitch{{ device.pk }}" href="{% url 'test_update' pk=device.pk %}">
+            <label class="custom-control-label" for="customSwitch{{ device.pk }}">Turn Device On</label> {% endcomment %}
+          {% endif %}
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      {% endfor %}
+
+    </div>
+  </article>
+{% endblock content %}

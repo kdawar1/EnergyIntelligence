@@ -1,0 +1,330 @@
+{
+    "room_in_entertainment": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 186.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 185.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 161.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "On",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 161.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "On",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_in_non_entertainment": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 140.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 103.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 138.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 138.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "On",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_in_sleeping": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 19.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 42.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 57.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 57.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_out": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 18.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 24.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "Off",
+                    "hall2/power_toggle": "Off",
+                    "living1/power_toggle": "Off",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 56.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 56.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "dining/power_toggle": "Off",
+                    "hall1/power_toggle": "On",
+                    "hall2/power_toggle": "On",
+                    "living1/power_toggle": "On",
+                    "living2/Power": "Off",
+                    "living3/Power": "Off",
+                    "s31_10/Power": "Sleep",
+                    "s31_11/Power": "On",
+                    "s31_12/Power": "Off",
+                    "s31_13/Power": "Off",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    }
+}

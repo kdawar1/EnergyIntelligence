@@ -1,0 +1,66 @@
+{
+    "2020-07-17 23:00:00-04:00": {
+        "Power_sum": 0.0,
+        "activity": "room_out",
+        "all_off": true,
+        "bathroom2/power_toggle": "Off",
+        "cloud_cover": "not_cloudy",
+        "time": "after_sunset"
+    },
+    "2020-07-18 05:15:00-04:00": {
+        "Power_sum": 0.0,
+        "activity": "room_out",
+        "all_off": true,
+        "bathroom2/power_toggle": "Off",
+        "cloud_cover": "not_cloudy",
+        "time": "after_sunrise"
+    },
+    "2020-07-19 03:00:00-04:00": {
+        "Power_sum": 6.0,
+        "activity": "room_in",
+        "all_off": false,
+        "bathroom2/power_toggle": "On",
+        "cloud_cover": "not_cloudy",
+        "time": "after_sunset"
+    },
+    "2020-07-19 05:15:00-04:00": {
+        "Power_sum": 1.0,
+        "activity": "room_in",
+        "all_off": true,
+        "bathroom2/power_toggle": "Off",
+        "cloud_cover": "not_cloudy",
+        "time": "after_sunrise"
+    },
+    "2020-07-19 11:55:00-04:00": {
+        "Power_sum": 6.0,
+        "activity": "room_in",
+        "all_off": false,
+        "bathroom2/power_toggle": "On",
+        "cloud_cover": "cloudy",
+        "time": "after_sunrise"
+    },
+    "2020-07-19 13:00:00-04:00": {
+        "Power_sum": 5.0,
+        "activity": "room_out",
+        "all_off": false,
+        "bathroom2/power_toggle": "On",
+        "cloud_cover": "cloudy",
+        "time": "after_sunrise"
+    },
+    "2020-07-19 18:35:00-04:00": {
+        "Power_sum": 0.0,
+        "activity": "room_out",
+        "all_off": true,
+        "bathroom2/power_toggle": "Off",
+        "cloud_cover": "cloudy",
+        "time": "after_sunrise"
+    },
+    "2020-07-21 19:35:00-04:00": {
+        "Power_sum": 1.0,
+        "activity": "room_in",
+        "all_off": true,
+        "bathroom2/power_toggle": "Off",
+        "cloud_cover": "cloudy",
+        "time": "after_sunrise"
+    }
+}

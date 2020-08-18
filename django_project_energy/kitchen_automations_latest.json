@@ -1,0 +1,94 @@
+{
+    "room_in": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 6.0,
+                    "activity": "room_in",
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "kitchen/power_toggle": "On",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 1.0,
+                    "activity": "room_in",
+                    "all_off": true,
+                    "cloud_cover": "not_cloudy",
+                    "kitchen/power_toggle": "Off",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 6.0,
+                    "activity": 1.0,
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "kitchen/power_toggle": "On",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 6.0,
+                    "activity": "room_in",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "kitchen/power_toggle": "On",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_out": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 0.0,
+                    "activity": "room_out",
+                    "all_off": true,
+                    "cloud_cover": "cloudy",
+                    "kitchen/power_toggle": "Off",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 0.0,
+                    "activity": "room_out",
+                    "all_off": true,
+                    "cloud_cover": "not_cloudy",
+                    "kitchen/power_toggle": "Off",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 5.0,
+                    "activity": 0.0,
+                    "all_off": false,
+                    "cloud_cover": "cloudy",
+                    "kitchen/power_toggle": "On",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 5.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "cloud_cover": "not_cloudy",
+                    "kitchen/power_toggle": "On",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    }
+}

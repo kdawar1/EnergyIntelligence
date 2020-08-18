@@ -1,0 +1,234 @@
+{
+    "room_in_entertainment": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 201.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "ark1/Power": "On",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 193.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "ark1/Power": "On",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 248.0,
+                    "activity": 3.0,
+                    "all_off": false,
+                    "ark1/Power": "On",
+                    "ark2/Power": "On",
+                    "ark3/Power": "On",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 248.0,
+                    "activity": "room_in_entertainment",
+                    "all_off": false,
+                    "ark1/Power": "On",
+                    "ark2/Power": "On",
+                    "ark3/Power": "On",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_in_non_entertainment": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 142.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": false,
+                    "ark1/Power": "On",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 64.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": true,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "Off",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 98.0,
+                    "activity": 2.0,
+                    "all_off": false,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 98.0,
+                    "activity": "room_in_non_entertainment",
+                    "all_off": false,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_in_sleeping": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 36.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": true,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "Off",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "Sleep",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 58.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": true,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "Off",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 62.0,
+                    "activity": 1.0,
+                    "all_off": true,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "Off",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 62.0,
+                    "activity": "room_in_sleeping",
+                    "all_off": true,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "Off",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    },
+    "room_out": {
+        "after_sunrise": {
+            "cloudy": [
+                {
+                    "Power_sum": 110.0,
+                    "activity": "room_out",
+                    "all_off": true,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "Off",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 98.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunrise"
+                }
+            ]
+        },
+        "after_sunset": {
+            "cloudy": [
+                {
+                    "Power_sum": 97.0,
+                    "activity": 0.0,
+                    "all_off": false,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ],
+            "not_cloudy": [
+                {
+                    "Power_sum": 97.0,
+                    "activity": "room_out",
+                    "all_off": false,
+                    "ark1/Power": "Off",
+                    "ark2/Power": "On",
+                    "ark3/Power": "Off",
+                    "cloud_cover": "not_cloudy",
+                    "s31_8/Power": "On",
+                    "time": "after_sunset"
+                }
+            ]
+        }
+    }
+}

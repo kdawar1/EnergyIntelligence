@@ -1,0 +1,182 @@
+[
+    {
+        "device_name": "dining",
+        "sensor": "LIDAR",
+        "sensor_ID": "dining/power_toggle",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+    {
+        "device_name": "hall1",
+        "sensor": "LIDAR",
+        "sensor_ID": "hall1/power_toggle",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+    {
+        "device_name": "hall2",
+        "sensor": "LIDAR",
+        "sensor_ID": "hall2/power_toggle",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "living1",
+        "sensor": "LIDAR",
+        "sensor_ID": "living1/power_toggle",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "living2",
+        "sensor": "LIDAR",
+        "sensor_ID": "living2/power_toggle",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "living3",
+        "sensor": "LIDAR",
+        "sensor_ID": "living3/power_toggle",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "s31_10",
+        "sensor": "LIDAR",
+        "sensor_ID": "s31_10/Power",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "s31_11",
+        "sensor": "LIDAR",
+        "sensor_ID": "s31_11/Power",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "s31_12",
+        "sensor": "LIDAR",
+        "sensor_ID": "s31_12/Power",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "s31_13",
+        "sensor": "LIDAR",
+        "sensor_ID": "s31_13/Power",
+		"room": "living_room",
+		"room_type": "Living Room",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "bathroom1",
+        "sensor": "LIDAR",
+        "sensor_ID": "bathroom1/power_toggle",
+		"room": "akshat_bathroom",
+		"room_type": "Bathroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "akshat1",
+        "sensor": "LIDAR",
+        "sensor_ID": "akshat1/Power",
+		"room": "akshat_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "akshat2",
+        "sensor": "LIDAR",
+        "sensor_ID": "akshat2/Power",
+		"room": "akshat_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "s31_9",
+        "sensor": "LIDAR",
+        "sensor_ID": "s31_9/Power",
+		"room": "akshat_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "bathroom2",
+        "sensor": "LIDAR",
+        "sensor_ID": "bathroom2/power_toggle",
+		"room": "ark_bathroom",
+		"room_type": "Bathroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "ark1",
+        "sensor": "LIDAR",
+        "sensor_ID": "ark1/Power",
+		"room": "Ark_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "ark2",
+        "sensor": "LIDAR",
+        "sensor_ID": "ark2/Power",
+		"room": "Ark_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "ark3",
+        "sensor": "LIDAR",
+        "sensor_ID": "ark3/Power",
+		"room": "Ark_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "s31_8",
+        "sensor": "LIDAR",
+        "sensor_ID": "s31_8/Power",
+		"room": "Ark_bedroom",
+		"room_type": "Bedroom",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    },
+	{
+        "device_name": "kitchen",
+        "sensor": "LIDAR",
+        "sensor_ID": "kitchen/power_toggle",
+		"room": "kitchen",
+		"room_type": "Kitchen",
+		"is_entertainment": "No",
+		"is_on": "Off"
+    }
+]

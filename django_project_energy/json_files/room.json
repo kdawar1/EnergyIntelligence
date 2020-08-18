@@ -1,0 +1,32 @@
+{
+    {
+        "room_name": "akshat_bedroom",
+        "room_type": "Bedroom",
+        "author": "jackie"
+    },
+    {
+        "room_name": "kitchen",
+        "room_type": "Kitchen",
+        "author": "jackie"
+    },
+    {
+        "room_name": "akshat_bathroom",
+        "room_type": "Bathroom",
+        "author": "jackie"
+    },
+    {
+        "room_name": "Ark_bedroom",
+        "room_type": "Bedroom",
+        "author": "jackie"
+    },
+    {
+        "room_name": "ark_bathroom",
+        "room_type": "Bathroom",
+        "author": "jackie"
+    },
+    {
+        "room_name": "living_room",
+        "room_type": "Living Room",
+        "author": "jackie"
+    }
+}

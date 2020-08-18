@@ -1,0 +1,104 @@
+{
+    "2020-07-17 23:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.0,
+        "current_energy_savings": 0.0,
+        "energy_savings": 0.0
+    },
+    "2020-07-18 00:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": -0.00184939299533049,
+        "current_energy_savings": -0.013440356070709925,
+        "energy_savings": 0.0
+    },
+    "2020-07-18 05:15:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": -0.001061303328635077,
+        "current_energy_savings": -0.0077129602371712735,
+        "energy_savings": 0.0
+    },
+    "2020-07-18 06:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.0020394381456441124,
+        "current_energy_savings": 0.01482149815147693,
+        "energy_savings": 0.0
+    },
+    "2020-07-19 11:55:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.23393381622005904,
+        "current_energy_savings": 1.7001004085760059,
+        "energy_savings": 0.0
+    },
+    "2020-07-19 12:00:00-04:00": {
+        "cost_savings": 0.0,
+        "current_cost_savings": 0.2042138766317656,
+        "current_energy_savings": 1.484112475521549,
+        "energy_savings": 0.0
+    },
+    "2020-07-21 06:55:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": 0.6922134899074752,
+        "current_energy_savings": 5.030621292932231,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 11:45:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.002372366736402398,
+        "current_energy_savings": -0.01724103732850324,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 13:15:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.011964522825034685,
+        "current_energy_savings": -0.08695147401914483,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 13:45:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.014614367814550278,
+        "current_energy_savings": -0.10620906841969457,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 15:15:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.020421663428099812,
+        "current_energy_savings": -0.14841325165770058,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 15:45:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.021552668581950485,
+        "current_energy_savings": -0.15663276585719643,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 16:15:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.022245602292012556,
+        "current_energy_savings": -0.16166862130823034,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 16:45:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.022485833506078023,
+        "current_energy_savings": -0.16341448768951494,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 17:15:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.02226253246313803,
+        "current_energy_savings": -0.16179166034257264,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 17:45:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.021569098655771946,
+        "current_energy_savings": -0.1567521704634629,
+        "energy_savings": 0.44331360217633176
+    },
+    "2020-07-23 18:15:00-04:00": {
+        "cost_savings": 0.060999951659463925,
+        "current_cost_savings": -0.020404957542816682,
+        "current_energy_savings": -0.14829184260768358,
+        "energy_savings": 0.44331360217633176
+    }
+}
