@@ -1,15 +1,46 @@
 {% extends "devices/base.html" %}
 {% block content %}
+  {% load static %}
   <p></p>
+
+  <button type="button" class="btn btn-light btn-lg" style="font-size:36px" disabled>Weather Information</button>
+  <div class="container" style="width:15rem; border-style:solid;">
+    <div class="notification"> </div>
+    <div class="weather-container">
+        <div class="weather-icon">
+            <img src="{% static 'icons/unknown.png' %}" alt="">
+        </div>
+        <div class="temperature-value btn btn-dark">
+            <p>- °<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+            <p> - </p>
+        </div>
+        <div class="location">
+            <p>-</p>
+        </div>
+    </div>
+    <script src="{% static 'app.js' %}"></script>
+  </div>
+  <br>
+
+
   {% if user.is_authenticated %}
     {% for hvac in hvacs %}
+    <button type="button" class="btn btn-light btn-lg" style="font-size:36px" disabled>HVAC</button>
+    <br>
       {% if hvac.power == 'Power Saver'%}
         <div class="btn-group" role="group" aria-label="Basic example">
-          <a href="{% url 'hvac_update' pk=hvac.pk %}" class="btn btn-success btn-lg">Normal</a>
+          <a href="{% url 'hvac_update' pk=hvac.pk %}" class="btn btn-success btn-lg">Power Saver</a>
+        </div>
+        <br></br>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <a href="" class="btn btn-success btn-lg">Increase Temperature</a>
+          <a href="" class="btn btn-danger btn-lg">Decrease Temperature</a>
         </div>
       {% else %}
         <div class="btn-group" role="group" aria-label="Basic example">
-          <a href="{% url 'hvac_update' pk=hvac.pk %}" class="btn btn-success btn-lg">Power Saver</a>
+          <a href="{% url 'hvac_update' pk=hvac.pk %}" class="btn btn-danger btn-lg">Normal</a>
         </div>
         <form>
           <div class="form-group">
@@ -21,14 +52,122 @@
         </form>
       {% endif %}
         <p></p>
-      
       <div>
         <p></p>
       </div>
     {% endfor %}
+
+    <button type="button" class="btn btn-light btn-lg" style="font-size:36px" disabled>Device details</button>
+    
+    {% for room in rooms %}
+      <div class="card-deck">
+        <a href="{% url 'room-detail' room.id %}">
+          <div class="card" > 
+              <div class="card-text">
+                {% if room.room_type == 'Bedroom'%}
+                  <i class="fas fa-bed fa-2x"></i>
+                {% elif room.room_type == 'Bathroom'%}
+                  <i class="fas fa-bath fa-2x"></i>
+                {% elif room.room_type == 'Kitchen'%}
+                  <i class="fas fa-utensils fa-2x"></i>
+                {% elif room.room_type == 'Living Room'%}
+                  <i class="fas fa-tv fa-2x"></i>
+                {% elif room.room_type == 'Dining Room'%}
+                  <i class="fas fa-pizza-slice fa-2x"></i>
+                {% elif room.room_type == 'Closet'%}
+                  <i class="fas fa-tshirt fa-2x"></i>
+                {% elif room.room_type == 'Other'%}
+                  <i class="fas fa-archive fa-2x"></i>
+                {% endif %}
+                <br>
+                <span class="date">{{ room.room_name }}</span>
+              </div>
+          </div>
+        </a>
+        <br>
+
+        <div class="card-deck">
+          {% for device in devices %}
+            {% if device.room.room_name == room.room_name%}
+            <a href="{% url 'test_update' pk=device.pk %}">
+              {% if device.is_on == 'On'%}
+              <div class="card bg-success"> 
+              {% else%}
+              <div class="card bg-danger"> 
+              {% endif %}
+                  <div class="card-text">
+                    <span style="color: White;">
+                      {% if device.room.room_type == 'Bedroom'%}
+                        <i class="fas fa-bed fa-2x"></i>
+                      {% elif device.room.room_type == 'Bathroom'%}
+                        <i class="fas fa-bath fa-2x"></i>
+                      {% elif device.room.room_type == 'Kitchen'%}
+                        <i class="fas fa-utensils fa-2x"></i>
+                      {% elif device.room.room_type == 'Living Room'%}
+                        <i class="fas fa-tv fa-2x"></i>
+                      {% elif device.room.room_type == 'Dining Room'%}
+                        <i class="fas fa-pizza-slice fa-2x"></i>
+                      {% elif device.room.room_type == 'Closet'%}
+                        <i class="fas fa-tshirt fa-2x"></i>
+                      {% elif device.room.room_type == 'Other'%}
+                        <i class="fas fa-archive fa-2x"></i>
+                      {% endif %}
+                      
+                      <p style="color:white;">{{ device.device_name }}</p>
+                    </span>
+                    <br>
+                    {% comment %} <span class="date">{{ room.room_name }}</span> {% endcomment %}
+                  </div>
+              </div>
+            </a>
+            <br>
+            {% endif %}
+          {% endfor %}
+
+    </div>
+      </div>
+    {% endfor %}
+  
+    {% comment %} <div class="card-deck">
+      {% for device in devices %}
+      <a href="{% url 'test_update' pk=device.pk %}">
+        {% if device.is_on == 'On'%}
+        <div class="card bg-success"> 
+        {% else%}
+        <div class="card bg-danger"> 
+        {% endif %}
+            <div class="card-text">
+              <span style="color: White;">
+                {% if device.room.room_type == 'Bedroom'%}
+                  <i class="fas fa-bed fa-2x"></i>
+                {% elif device.room.room_type == 'Bathroom'%}
+                  <i class="fas fa-bath fa-2x"></i>
+                {% elif device.room.room_type == 'Kitchen'%}
+                  <i class="fas fa-utensils fa-2x"></i>
+                {% elif device.room.room_type == 'Living Room'%}
+                  <i class="fas fa-tv fa-2x"></i>
+                {% elif device.room.room_type == 'Dining Room'%}
+                  <i class="fas fa-pizza-slice fa-2x"></i>
+                {% elif device.room.room_type == 'Closet'%}
+                  <i class="fas fa-tshirt fa-2x"></i>
+                {% elif device.room.room_type == 'Other'%}
+                  <i class="fas fa-archive fa-2x"></i>
+                {% endif %}
+                
+                <p style="color:white;">{{ device.device_name }}</p>
+              </span>
+              <br>
+              <span class="date">{{ room.room_name }}</span>
+            </div>
+        </div>
+      </a>
+      <br>
+      {% endfor %} {% endcomment %}
+
+    </div>
   {% endif %}
 
-  <p>
+  {% comment %} <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
     Energy conservation at home tips
   </a>
@@ -150,7 +289,7 @@
       <p>Energy conservation is important and beneficial&nbsp;for many reasons. You can <a href="https://www.energysage.com/energy-efficiency/why-conserve-energy/lower-electric-bill/">save money</a>, <a href="https://www.energysage.com/energy-efficiency/why-conserve-energy/residential-ee/">increase your property value</a>, and <a href="https://www.energysage.com/energy-efficiency/why-conserve-energy/environmental-impact-of-ee/">protect the environment</a> all through simple energy-saving measures. These&nbsp;are great benefits you can gain from saving energy no matter your exact motivation for conservation in the first place. By simply taking a small step towards living a more energy-conscious lifestyle, you can begin to enjoy all of the perks of being energy efficient.</p>
       <p>Read more about the <a href="https://www.energysage.com/energy-efficiency/why-conserve-energy/">many benefits of energy efficiency and energy conservation</a>.</p><span class="hs-cta-wrapper" id="hs-cta-wrapper-85a12e5f-e42a-4fb0-927d-d5b8ee93ef77"><span class="hs-cta-node hs-cta-85a12e5f-e42a-4fb0-927d-d5b8ee93ef77" id="hs-cta-85a12e5f-e42a-4fb0-927d-d5b8ee93ef77" style="visibility: visible;" data-hs-drop="true"><a id="cta_button_479905_31ea2679-323f-4da1-b737-fc8c010dee51" class="cta_button" href="https://info.energysage.com/cs/c/?cta_guid=31ea2679-323f-4da1-b737-fc8c010dee51&amp;placement_guid=85a12e5f-e42a-4fb0-927d-d5b8ee93ef77&amp;portal_id=479905&amp;canon=https%3A%2F%2Fwww.energysage.com%2Fenergy-efficiency%2F101%2Fways-to-save-energy%2F&amp;redirect_url=APefjpE-oPWNFbF5u32y1KxGg5G1CYk6NtaMBauXN6mwrFFicoV-CozfbeRYeFDu-urcsPN5MwgILBmtmcBnzaZ5ww5kxji9B8BtkDbA89yIOKiGWhGQPyhrPtr3Oxbe0W4dqeMn1Awj&amp;click=8c7a7def-231e-4bb6-a0ac-67cad0d1fdf6&amp;hsutk=90bc41aa6bbf4165848c1a42d2024ba3&amp;signature=AAH58kG_6lpOxdFQFH1aj5aNPDe39OS8TQ&amp;utm_referrer=https%3A%2F%2Fwww.google.com%2F&amp;__hstc=105709404.90bc41aa6bbf4165848c1a42d2024ba3.1596997140474.1596997140474.1596997140474.1&amp;__hssc=105709404.1.1596997140475&amp;__hsfp=183078399" cta_dest_link="https://www.energysage.com/solar/calculator/"><img id="hs-cta-img-85a12e5f-e42a-4fb0-927d-d5b8ee93ef77" class="hs-cta-img " style="border-width: 0px; " mce_noresize="1" alt="conserve energy with solar graphic" src="https://cdn2.hubspot.net/hubfs/479905/hub_generated/resized/a05b74b1-d7e2-4c73-948a-c58f5b556877.png"></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(479905, '85a12e5f-e42a-4fb0-927d-d5b8ee93ef77', {}); </script></span>
     </div>
-  </div>
+  </div> {% endcomment %}
 
     {% if is_paginated %}
 

@@ -12,6 +12,20 @@
             <h2><a class="article-title" href="{% url 'room-detail' room.id %}">{{ room.room_name }}</a></h2>
             
             <small class="text-muted">{{ room.room_type }}</small>
+            {% load static %}
+            {% if room.room_name == 'Kshitij bedroom' %}
+              <img class="card-img" src="{% static 'savings_img/akshat_bedroom_savings.png'%}" alt="Card image cap" >
+            {% elif room.room_name == 'Kshitij bathroom' %}
+              <img class="card-img" src="{% static 'savings_img/akshat_bathroom_savings.png'%}" alt="Card image cap">
+            {% elif room.room_name == 'Jackie woman-cave' %}
+              <img class="card-img" src="{% static 'savings_img/Ark_bedroom_savings.png'%}" alt="Card image cap">
+            {% elif room.room_name == 'Jackie Bathroom' %}
+              <img class="card-img" src="{% static 'savings_img/ark_bedroom_savings.png'%}" alt="Card image cap">
+            {% elif room.room_name == 'Kitchen' %}
+              <img class="card-img" src="{% static 'savings_img/kitchen_savings.png'%}" alt="Card image cap">
+            {% elif room.room_name == 'Common Area' %}
+              <img class="card-img" src="{% static 'savings_img/living_room_savings.png'%}" alt="Card image cap">
+            {% endif%}
           </div>
         </article>
     {% endfor %}

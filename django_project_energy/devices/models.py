@@ -39,7 +39,7 @@ class Device(models.Model):
     ENTERTAINMENT_CHOICE = (('Yes', 'Yes'), ('No','No'),)
     STATUS_CHOICE = (('On', 'On'), ('Off','Off'),)
     device_name = models.CharField(max_length=100)
-    sensor = models.CharField(max_length=15, choices=SENSOR_CHOICES)
+    #sensor = models.CharField(max_length=15, choices=SENSOR_CHOICES)
     date_added = models.DateTimeField(default=timezone.now)
     sensor_ID = models.CharField(max_length=30)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)

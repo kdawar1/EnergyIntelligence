@@ -4,26 +4,26 @@
     <p>Here are the automations for <b>{{ view.kwargs.username }}</b>. These have been determined based upon your energy and device usage patterns.</p>
     
     <article class="media content-section">
-        <div class="accordion" id="akshat_bedroom">
+        <div class="accordion" id="Kshitij_bedroom">
             <div class="card">
                 <div class="card-header" id="">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Automations for akshat_bedroom
+                            Automations for Kshitij bedroom
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#akshat_bedroom">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#Kshitij_bedroom">
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             {% for auto in autos %}
-                                {% if auto.device.room.room_name == 'akshat_bedroom' %}
+                                {% if auto.device.room.room_name == 'Kshitij bedroom' %}
                             <tr>
                                 <td>{{ auto.device | upper}}</td>
-                                <td>{{ auto.time}}</td>
+                                <td>{% if auto.time == 'after_sunset'%}After sunset{% else %}After sunrise{% endif %}</td>
                                 <td>{{ auto.activity }}</td>
-                                <td>{{ auto.weather }}</td>
+                                <td>{% if auto.weather == 'cloudy'%}Cloudy{% else %}Not Cloudy{% endif %}</td>
                                 
                                 {% if auto.automation == 'On' %}
                                     <td><a href="" class="btn btn-danger btn-lg">On</a></td>
@@ -42,21 +42,21 @@
 
         
     <article class="media content-section">
-        <div class="accordion" id="akshat_bathroom">
+        <div class="accordion" id="Kshitij_bathroom">
             <div class="card">
                 <div class="card-header" id="">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Automations for akshat_bathroom
+                            Automations for Kshitij bedroom
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#akshat_bathroom">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#Kshitij_bathroom">
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             {% for auto in autos %}
-                                {% if auto.device.room.room_name == 'akshat_bathroom' %}
+                                {% if auto.device.room.room_name == 'Kshitij bathroom' %}
                             <tr>
                                 <td>{{ auto.device | upper}}</td>
                                 <td>{{ auto.time}}</td>
@@ -79,21 +79,21 @@
     </article>
 
     <article class="media content-section">
-        <div class="accordion" id="Ark_bedroom">
+        <div class="accordion" id="Jackie_woman_cave">
             <div class="card">
                 <div class="card-header" id="">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Automations for Ark_bedroom
+                            Automations for Jackie woman-cave
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#Ark_bedroom">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#Jackie_woman_cave">
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             {% for auto in autos %}
-                                {% if auto.device.room.room_name == 'Ark_bedroom' %}
+                                {% if auto.device.room.room_name == 'Jackie woman-cave' %}
                             <tr>
                                 <td>{{ auto.device | upper}}</td>
                                 <td>{{ auto.time}}</td>
@@ -116,21 +116,21 @@
     </article>
 
     <article class="media content-section">
-        <div class="accordion" id="ark_bathroom">
+        <div class="accordion" id="Jackie_Bathroom">
             <div class="card">
                 <div class="card-header" id="">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Automations for ark_bathroom
+                            Automations for Jackie Bathroom
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#ark_bathroom">
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#Jackie_Bathroom">
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             {% for auto in autos %}
-                                {% if auto.device.room.room_name == 'ark_bathroom' %}
+                                {% if auto.device.room.room_name == 'Jackie Bathroom' %}
                             <tr>
                                 <td>{{ auto.device | upper}}</td>
                                 <td>{{ auto.time}}</td>
@@ -153,21 +153,21 @@
     </article>
 
     <article class="media content-section">
-        <div class="accordion" id="living_room">
+        <div class="accordion" id="Common_Area">
             <div class="card">
                 <div class="card-header" id="">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Automations for living_room
+                            Automations for Common Area
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#living_room">
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#Common_Area">
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             {% for auto in autos %}
-                                {% if auto.device.room.room_name == 'living_room' %}
+                                {% if auto.device.room.room_name == 'Common Area' %}
                             <tr>
                                 <td>{{ auto.device | upper}}</td>
                                 <td>{{ auto.time}}</td>
@@ -190,21 +190,21 @@
     </article>
 
     <article class="media content-section">
-        <div class="accordion" id="kitchen">
+        <div class="accordion" id="Kitchen">
             <div class="card">
                 <div class="card-header" id="">
                     <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSiz">
-                            Automations for kitchen
+                            Automations for Kitchen
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#kitchen">
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#Kitchen">
                     <div class="card-body">
                         <table class="table table-striped table-hover">
                             {% for auto in autos %}
-                                {% if auto.device.room.room_name == 'kitchen' %}
+                                {% if auto.device.room.room_name == 'Kitchen' %}
                             <tr>
                                 <td>{{ auto.device | upper}}</td>
                                 <td>{{ auto.time}}</td>

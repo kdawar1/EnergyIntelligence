@@ -32,7 +32,7 @@ def test_update(request, pk):
         device.is_on = 'On'
     device.save()
     messages.success(request, '{} was turned {} successfully'.format(device.device_name, device.is_on))
-    return redirect('room-detail', pk=device.room.pk)
+    return redirect('blog-home')
 
 ### Device View
 class UserDeviceListView(LoginRequiredMixin, ListView):
